@@ -1,9 +1,9 @@
 import { Injectable, NotFoundException, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config'
 import { NotFoundError } from 'rxjs';
-import { FirebaseService } from 'src/database/firebase/firebase.service';
-import { IUser } from 'src/user/interfaces/user.interface'
-import { UsersService } from 'src/database/users/users.service';
+import { FirebaseService } from 'app/src/database/firebase/firebase.service';
+import { IUser } from 'app/src/user/interfaces/user.interface'
+import { UsersService } from 'app/src/database/users/users.service';
 
 
 @Injectable()

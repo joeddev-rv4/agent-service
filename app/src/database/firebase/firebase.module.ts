@@ -5,8 +5,8 @@ import { FirebaseService } from './firebase.service';
 import { join } from 'path'
 import * as path from 'path'
 import * as fs from 'fs'
-import { PropertiesService } from 'src/properties/properties.service';
-import { DocumentsService } from 'src/documents/documents.service';
+import { PropertiesService } from 'app/src/properties/properties.service';
+import { DocumentsService } from 'app/src/documents/documents.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Documentos } from '../entities/documents.entity';
 

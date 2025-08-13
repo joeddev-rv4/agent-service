@@ -1,9 +1,9 @@
 import { Injectable, InternalServerErrorException, Logger } from '@nestjs/common';
 import * as admin from 'firebase-admin'
-import { IPropertyUser, IUser, IUserSales, IUserRequest } from 'src/user/interfaces/user.interface';
-import { PropertiesService } from 'src/properties/properties.service';
+import { IPropertyUser, IUser, IUserSales, IUserRequest } from 'app/src/user/interfaces/user.interface';
+import { PropertiesService } from 'app/src/properties/properties.service';
 import { FieldPath } from "firebase-admin/firestore"; // o firebase/firestore en cliente
-import { DocumentsService } from 'src/documents/documents.service';
+import { DocumentsService } from 'app/src/documents/documents.service';
 
 @Injectable()
 export class FirebaseService {

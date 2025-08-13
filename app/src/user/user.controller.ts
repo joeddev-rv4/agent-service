@@ -1,6 +1,6 @@
 import { Controller, Get, Param } from '@nestjs/common';
 import { UserService } from './user.service'
-import { FirebaseService } from 'src/database/firebase/firebase.service';
+import { FirebaseService } from 'app/src/database/firebase/firebase.service';
 
 @Controller('/user')
 export class UserController {
