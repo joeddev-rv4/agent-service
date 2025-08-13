@@ -1,6 +1,6 @@
 # ---- Build stage ----
 FROM node:20-alpine AS builder
-WORKDIR /app
+WORKDIR /
 
 # Instalar dependencias (aprovecha cache)
 COPY package*.json ./
@@ -12,7 +12,7 @@ RUN npm run build
 
 # ---- Runtime stage ----
 FROM node:20-alpine AS runner
-WORKDIR /app
+WORKDIR /
 ENV NODE_ENV=production
 
 # Sólo dependencias de producción
