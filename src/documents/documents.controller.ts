@@ -2,7 +2,7 @@
 import { Controller, Post, UseInterceptors, UploadedFile, Body, BadRequestException } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { UploadDto } from './documents.dto';
-import { FirebaseStorageService } from 'app/src/database/firebase-storage/firebase-storage.service'; 
+import { FirebaseStorageService } from '../database/firebase-storage/firebase-storage.service'; 
 import type { Express } from 'express';
 
 const ALLOWED = ['application/pdf','image/png','image/jpeg','image/webp'];

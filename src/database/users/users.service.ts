@@ -3,7 +3,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Int32, Repository } from 'typeorm';
 import { Users } from '../entities/users.entity';
 import { PropertyViewing } from '../entities/property_viewing.entity';
-import { PropertiesService } from 'app/src/properties/properties.service';
+import { PropertiesService } from '../../properties/properties.service';
 
 @Injectable()
 export class UsersService {

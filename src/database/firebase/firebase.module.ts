@@ -2,11 +2,10 @@ import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import * as admin from 'firebase-admin';
 import { FirebaseService } from './firebase.service';
-import { join } from 'path'
 import * as path from 'path'
 import * as fs from 'fs'
-import { PropertiesService } from 'app/src/properties/properties.service';
-import { DocumentsService } from 'app/src/documents/documents.service';
+import { PropertiesService } from '../../properties/properties.service';
+import { DocumentsService } from '../../documents/documents.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Documentos } from '../entities/documents.entity';
 

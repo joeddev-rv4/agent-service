@@ -1,7 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Int32, Repository } from 'typeorm';
-import { Documentos } from 'app/src/database/entities/documents.entity';
+import { Documentos } from '../database/entities/documents.entity';
 
 @Injectable()
 export class DocumentsService {
